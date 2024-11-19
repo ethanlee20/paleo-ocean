@@ -107,6 +107,7 @@ def train_and_eval(
     epochs, train_batch_size, eval_batch_size, 
     device, move_data=True,
 ):
+    
     train_dataloader = DataLoader(train_dataset, batch_size=train_batch_size, drop_last=True, shuffle=True) #, pin_memory=True, num_workers=4)
     eval_dataloader = DataLoader(eval_dataset, batch_size=eval_batch_size, drop_last=True, shuffle=True) #, pin_memory=True, num_workers=4)
     
